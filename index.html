@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant app</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--This is the Top Bar-->
+    <header>
+        <nav>
+            <div class="container">
+              <a href="#" class="logo">
+                  <h1>Restaurant</h1>
+              </a>
+              <div class="menu" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+        
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="loginTrigger()" href="#">Login</a>
+                  </li>
+                  
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+              <!--login Section-->
+          <section class="login hide">
+            <div class="loggin">
+              <h2>SIGN UP FORM</h2>
+              <form role="form">
+                
+                <div class="form-group">
+                  <input type="text" name="fname" id="fname" placeholder="First Name" required> 
+                </div>
+
+                <div class="form-group">
+                  <input type="text" name="lname" id="lname" placeholder="last Name" required> 
+                </div>
+
+                <div class="form-group">
+                  <input type="email" name="email" id="email" placeholder="Email Address" required> 
+                </div>
+
+                <div class="form-group">
+                  <input type="password" name="password" id="password" placeholder="Password" required> 
+                </div>
+
+                <div class="btn-group">
+                <button type="submit" id="signup"class="btn btn-success" onclick="loginTrigger()">Sign Up</button>
+
+
+              </form>
+
+            </div>
+          </section>
+
+          <section class="hero">
+              <div class="container">
+          </section>
+
+            <!-- container About us section -->
+          <section class="section-about">
+              <div class="container">
+                <h1>ABOUT US</h1>
+            </div>
+          </section>
+
+          <section class="section-about-content">
+            <div class="container">
+              <p>Our brand has a tradition of pleasure on the palate!<br><br> We have learned the importance of care in physical contact during this pandemic, however, during the coming months, we will give priority to our pre-scheduled service, so the RESTAURANT will be able to guarantee the sharing of your meal in total safety control.</p>
+            </div>
+        </section>
+    </header>   
+  
+  <!-- container plates section -->
+    <main>
+        <div class="container">
+            <h3>Menu</h3>
+            <section class="plates-product" id="product-div">
+            
+            <!--This code was made at first time and then replaced by a dynamic JavaScript code ...
+
+            <article class="plate">
+            <img src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg" height="300" alt="image unavailable">
+            <h4>Name:</h4>
+            <h4>Day:</h4>
+            <h4>Type:</h4>
+            <h4>Price:</h4>
+            <button type="button">Adicionar</button>
+            </article>-->
+                
+            </section>
+        </div>
+
+          <div class="modal hide">
+          <form class="modal-form" id="form-plate">
+            <H2>Book - Reserve</H2>
+                        
+            <div class="form-group">
+              <label for="title">Plate</label>
+              <input type="text" name="title" id="title" class="form-control" placeholder="** Input Plate **">
+            </div>
+            
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" name="quantity" id="quantity" class="form-control" placeholder="** Input quantity **">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Client Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="** Input your Name **">
+            </div>
+
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address" class="form-control" placeholder="** Input your Address **">
+            </div>
+
+            <div class="form-group">
+              <label for="payment">Payment</label>
+              <select name="payment" id="payment" class="form-control">
+                <option value="cash">Cash</option>
+                <option value="credit-card">Credit card</option>
+              </select>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button type="button" class="btn btn-danger" onclick="modalTrigger()">Cancel</button>
+            </div>
+
+          </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+        <a class="link" href="https://www.linkedin.com/in/jhonnymosquera/" target="_blank">Developed by Jhonny Ocampo</a> &copy;
+        </div>    
+    </footer> 
+
+    <!--In this section I integrate JavaScript-->
+   <script src="javascript/plates.js"></script>
+   <script src="javascript/app.js"></script>
+
+</body>
+</html>
