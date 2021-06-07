@@ -4,6 +4,7 @@ function loginData(){
     let email= document.getElementById('email');
     let password= document.getElementById('password');
 }
+loginData();
 
 const loginTrigger =(loginFunction) => {
     const login = document.querySelector('.login')
